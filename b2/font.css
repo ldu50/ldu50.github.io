@@ -1,0 +1,11 @@
+@charset "utf-8";
+@font-face{
+    font-family:"";
+    src:local(""),
+        url("") format(""),
+        url("") format(""),
+        url("") format(""),
+        url("") format(""),
+    font-weight:400;
+    font-style:normal;
+}
