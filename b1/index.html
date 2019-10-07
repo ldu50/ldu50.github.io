@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>안동시 소개페이지</title>
+    <meta name="viewport" content="width=device-width", initial-scale=1.0, user-scalable=no>
+    <meta name="title" content="품격높은, 풍요로운 도시. 행복 안동.">
+    <meta name="keywords" content="안동, 안동시, 안동 지자체">
+    <meta name="description" content="안동시(安東市)는 대한민국 경상북도 중북부에 있는 도시이자, 경상북도청 소재지이다.">
+    <meta property = "og:title" content="품격높은, 풍요로운 도시. 행복 안동.">
+    <meta property = "og:description" content="안동시(安東市)는 대한민국 경상북도 중북부에 있는 도시이다.">
+    <meta property = "og:img" href="./data/14mega.jpg">
+
+<!--    <meta property = "og:img" content="절대주소">-->
+    <meta http-equiv="X-UV-compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="./data/farvicon_16x16.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./data/farvicon_32x32.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./data/ico_andong.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./data/ico_andong.png">
+    <link rel="shortcut icon" type="image/png" sizes="180x180" href="./data/ico_andong.png">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+    <style>
+    /* 초기화 */
+    * {margin: 0; padding: 0}
+    body, html {width: 100%; height: 100%; font-family: 'Noto Serif KR', serif;}
+    ul {list-style: none;}
+    a {text-decoration: none;}
+    button, a, input {border: 0; outline: 0;}
+
+    /* 공통서식 */
+    .wrap {width: 100%; height: 100%;}
+    .page {clear: both; width: 100%; height: 100%; position: relative;}
+    .page_wrap {width: 1200px; margin: 0 auto;}
+    #tnb {width: 100%; height: 42px; background: rgba(0,0,0,0.5); position: absolute; top:0; left: 0; z-index: 60;}
+    .right.menu { float:right; margin-right: 120px;}
+    #tnb li {float: left; margin-left: 25px;}
+    #tnb li a{ display: block; color: #fff; line-height: 42px; font-size: 14px;}
+    .lst_btn{display: block; width: 57px; height: 51px; background-position: -133px -145px; background-image: url("./data/14mega_Moment.jpg"); background-repeat: no-repeat; position: fixed; top: 120px; left: 150px; z-index: 99; text-indent: -9999px; cursor: pointer;}
+    #gnb {position: fixed; top: 0; left: -250px; z-index: 99; width: 240px; height: 100%; background-color: rgba(255,255,255,0.8); transition: 0.5s; border-right: 3px solid #ccc;}
+    #ck1:checked - #gnb {left: 0;}
+    #ck1 {display: none;}
+    label.colse_btn { display: block; background-position: -195px -147; width: 36px; height: 33px; background-image: url("./data/._1982478-200.png") ; text-indent: -9999px; margin: 14px; float: right;}
+    .main {clear: both; }
+    .main li { line-height: 46px; }
+    .main li a { display: block; padding-left: 20px; color: #333; font-size: 18px; }
+    .bottom { margin-top: 120px; }
+    .bottom li { line-height: 32px; }
+    .bottom li a { display: block; color: #fe3c08; text-indent: 20px; }
+
+    /* 메인 페이지 콘텐츠 스타일 */
+    #vdo { width: 100%; height: 100%;}
+    #vd1 { display: block; width: 100%; max-height: 100%;}
+    #cover_page { position: absolute; width: 100%; height: 100%; z-index: 10; top: 0; left: 0; }
+    .tit { background-image: url("./data/logo.png"); background-repeat: no-repeat; width: 430px; height: 140px; margin: 90px auto; margin-top: 200px; }
+    #frm1 { width: 800px; height: 70px; margin: 0 auto; background-color: rgba(0,0,0,0.6); }
+    #keyword {display: block; height: 80px; width: 70px; font-size: 18px; text-indent: 24px; margin: 5px; float: left;}
+    #search {display: block; width: 70px; width: 700px; font-size: 18px; text-indent: 24px; margin: 5px; background-color: #fff; border-image: url("./data/._1157129-200.png") ; text-indent: -9999px; background-size: 80px 80px; background-position: center center; background-repeat: no-repeat; opacity: 0.6; transition: 0.5s;}
+
+    ul { list-style: none; }
+    a { text-decoration: none;}
+
+
+    /* 3페이지 스타일 */
+    .vs_con {margin-top: 50px;}
+    #vs { width: 100%; overflow-x: hidden; background-color: #fff; padding-top: 50px; position: relative;}
+    #img_box { width: 400%;}
+    #img_box li { float: left; width: 25%; }
+    .img_box li .pic { display: block; widows: 580px; float: left; margin-left: 40px; margin-bottom: 40px;}
+    .img_box li .tit_box { width: 580px; float: right; margin-right: 40px; margin-bottom: 40px;}
+    .vs_tit { padding: 24px; }
+    .vs_com { padding: 24px; }
+    .more { display: block; width: 120px; height: 40px; border: 2px solid #333; color: #333; text-align: center; line-height: 40px; margin: 24px;}
+    .btn_box { position: absolute; right: 100px; bottom: 50px; z-index: 50; width: 500px; height: 14px; border: 1px solid #000;}
+    .btn_box li { width: 150px; margin-left: 10px; float: left;}
+    .btn_box li button { display: block; height: 14px; width: 150px; background: #666;}
+    .btn_box li.on button { background-color: #fe3c08;}
+
+    .ico_link { clear:both ; width: 100%; height: 100%; height: 64px; background: #fff;}
+    .ico_link li { float: left; width: 50%; height: 64px; }
+    .ico_link li a { display: block; color: #333; font-size: 32px; line-height: 64px; text-align: center; background: #fff;}
+    .ico_link li a.item2 { background: #f0f0f0;}
+/*        .ico_link li a:before {content: "A"; padding-left: 15px; padding-right: 15px; background-image: url("./data/~.png")}*/
+/*
+    .ico_link li a.item1:before {background-position: 0px -301px;}
+    .ico_link li a.item1:before {}
+*/
+
+    .ico_link li a span {display: block; float:left; padding-left: 15px; }
+    .ico_link li a .ico {background-repeat: no-repeat; background-image: url("./data/~.png"); margin-top: 5px;}
+    .ico_link li a.item .ico {background-position: 0px -301px; width: 35px; line-height: }
+    .ico_link li a.item .ico {background-position: 0px -301px; width: 35px; line-height: }
+    #ft { height: 100px; background: #333; color: #555; }
+    .fnb {float: left; }
+    .fnb li {float: left; padding: 20px; }
+    .fnb li a { color: #777; display: block; line-height: 60px;}
+    .fnb li a:after { content: "|"; padding-left: 40px; }
+    .fnb li a.last:after {content: "";}
+    .copyright { float: right; line-height: 180px; padding-right: 24px;}
+
+    #totop { position: fixed; right: 60px; bottom: 100px; z-index: 999; display: block; width: 60px; height: 60px; text-align: center; line-height: 60px; background: #f0f0f0; color: #333; border-radius: 32px; box-shadow: 0px 0px 12px #333;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+            <nav id="tnb">
+                <ul class="right menu">
+                    <li><a href="http://www.andong.go.kr/arts/main.do">예술의전당</a></li>
+                    <li><a href="http://www.tourandong.com/public/">문화관광</a></li>
+                    <li><a href="http://council.andong.go.kr/source/korean/main/main.html">안동시의회</a></li>
+                </ul>
+            </nav>
+            <input type="checkbox" id="ckg">
+            <label for="ck1" class="lst_btn">열기</label>
+            <nav id="gnb">
+                <label for="ck1" class="close_btn">닫기
+                </label>
+                <ul class="main">
+                    <li><a href="">안동 소개</a></li>
+                    <li><a href="">테마 코스</a></li>
+                    <li><a href="">안동 민원</a></li>
+                    <li><a href="">정보 공개</a></li>
+                </ul>
+                <ul class="bottom">
+                    <ul><a href="http://www.andong.go.kr/arts/main.do"></a>예술의전당</ul>
+                    <ul><a href="http://www.tourandong.com/public/"></a>문화관광</ul>
+                    <ul><a href="http://council.andong.go.kr/source/korean/main/main.html"></a>안동시의회</ul>    
+                </ul>
+            </nav>
+            <div class="page" id="page1">
+                <figure id="vdo">
+                    <video src="./data/9.6mega.mp4" id="vd1" autoplay muted loop></video>    
+                </figure>
+                <section class="page_wrap">
+                    <h2 class="tit"><img src="" alt=""><!-- 455x55 --></h2>
+                    <form action="" id="frm1">
+                        <input type="text" id="keyword" placeholder="검색어를 입력해주세요">
+                        <input type="submit" id="search">
+                    </form>   
+                </section>
+            </div>
+            <div class="page" id="page2">
+                <section class="page_wrap" id="insight">
+                    <h2 class="page_tit">INSIGHTS</h2>
+                    <ul class="thum_lst">
+                        <li class="col4"><a href="">
+                            <h4 class="cate_tit">뉴스레터</h4>
+                            <h3 class="lst_tit">'산업기술의 유출방지</h3>
+                            <p class="lst_com">ㄴㅇㄴㅇㄴㅇㄴㅇㄴㅇㄴㅇ</p>
+                            <span class="lst_date">2019.09.10</span></a></li>
+                    </ul>
+                    <ul class="thum_lst">
+                        <li class="col4"><a href="">
+                            <h4 class="cate_tit">ㄴㅇㄴㅇㄴㅇㄴ</h4>
+                            <h3 class="lst_tit">ㅇㅇㅇㅇㅇ</h3>
+                            <p class="lst_com">ㅋㅋㅋㅋㅋㅋ</p>
+                            <span class="lst_date">2019.09.10</span></a></li>
+                    </ul>
+                    <ul class="thum_lst">
+                        <li class="col4"><a href="">
+                            <h4 class="cate_tit">ㄴㅇㄴㅇㅇ</h4>
+                            <h3 class="lst_tit">ㄴㅇㄴㄻㄻ</h3>
+                            <p class="lst_com">ㅇㄴㅇㄴㅇ</p>
+                            <span class="lst_date">2019.09.10</span></a></li>
+                    </ul>
+                    <ul class="thum_lst">
+                        <li class="col4"><a href="">
+                            <h4 class="cate_tit">ㄱㄱㄱㄱㄱㄱ</h4>
+                            <h3 class="lst_tit">ㄱㄱㄱ</h3>
+                            <p class="lst_com">ㄱㄱㄱ</p>
+                            <span class="lst_date">2019.09.10</span></a></li>
+                    </ul>
+                    <ul class="thum_lst">
+                        <li class="col8"><a href="">
+                            <h4 class="cate_tit">ㄱㄱㄱㄱㄱㄱㄱㄱ</h4>
+                            <h3 class="lst_tit">ㄱㄱㄱㄱㄱ</h3>
+                            <p class="lst_com">ㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱㄱ</p>
+                            <span class="lst_date">2019.09.10</span></a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="page" id="page3">
+                <section class="page_wrap" id="vs_con">
+                    <figure id="vs">
+                        <ul class="img_box">
+                            <li>
+                                <img src="" alt="" class="pic">
+                                <div class="tit_box">
+                                    <h3 class="vs_tit">떠나지마</h3>
+                                    <p class="vs_com">젇대에에ㅔ엔</p>
+                                    <a href="" class="more">지금이 시간을 멈춘채</a>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="" alt="" class="pic">
+                                <div class="tit_box">
+                                    <h3 class="vs_tit">zzzzz</h3>
+                                    <p class="vs_com">zzzz</p>
+                                    <a href="" class="more">zzzzzzzz</a>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="" alt="" class="pic">
+                                <div class="tit_box">
+                                    <h3 class="vs_tit">zzzzzzzzzz</h3>
+                                    <p class="vs_com">zzzzzzzz</p>
+                                    <a href="" class="more">zzzzz</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </figure>
+                    <ul class="btn_box">
+                        <li class="on"><button></button></li>
+                        <li><button></button></li>
+                        <li><button></button></li>
+                    </ul>
+                    <ul class="ico_link">
+                        <li>
+                            <a href="" class="item1">
+                                <span class="ico"></span>
+                                <span>사무실 위치</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="item2">
+                                <span class="ico"></span>
+                                <span>연락처</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <footer id="ft">
+                        <ul class="fnb">
+                            <li><a href="">안녕</a></li>
+                            <li><a href="">오랜</a></li>
+                            <li><a href="">만이야</a></li>
+                            <li><a href="">물음표</a></li>
+                            <li><a href="" class="last">없이</a></li>
+                        </ul>
+                        <p class="copyright">Copyright 2019. All Rights Reserved.</p>
+                    </footer>
+                </section>
+           </div>
+    </div>
+    <a href="#" id="totop">↑</a> 
+</body>
+</html>
